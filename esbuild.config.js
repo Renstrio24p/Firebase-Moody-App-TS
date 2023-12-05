@@ -41,7 +41,6 @@ const startEsbuildServe = async () => {
     outdir: 'dist/assets',
     // sourcemap: true,
     plugins: [
-      // Add any necessary plugins here
     ],
     loader: {
       '.ts': 'tsx',
@@ -60,7 +59,6 @@ const startEsbuildServe = async () => {
   }, { root: 'dist', port: 9200 });
   browserOpened = false
 
-  // Open the browser after starting the esbuild server
   await openBrowser();
 };
 
