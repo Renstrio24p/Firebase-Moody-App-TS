@@ -1,0 +1,25 @@
+{
+  "name": "esreact",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^20.10.3",
+    "dotenv": "^16.3.1",
+    "esbuild": "^0.19.8",
+    "esbuild-serve": "^1.0.1",
+    "fs-extra": "^11.2.0",
+    "opn": "^6.0.0",
+    "ts-node": "^10.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rmdir /s /q dist && rmdir /s /q dist  || node esbuild.config.js --build",
+    "start": "rmdir /s /q dist && rmdir /s /q dist  || node esbuild.config.js -w --open"
+  },
+  "dependencies": {
+    "firebase": "^10.7.0",
+    "typescript": "^5.3.2"
+  }
+}
