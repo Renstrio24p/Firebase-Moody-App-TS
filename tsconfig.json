@@ -13,7 +13,8 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "isolatedModules": false,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "removeComments": true
   },
   "exclude": ["node_modules"]
 }

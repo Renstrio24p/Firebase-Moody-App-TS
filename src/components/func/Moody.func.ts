@@ -178,15 +178,7 @@ const filterButtonEls = document.getElementsByClassName("filter-btn") as HTMLCol
     }
 
     async function deletePostFromDB(docId: string) {
-        /* Challenge:
-            Import deleteDoc and doc from 'firebase/firestore'
-            
-            Use the code from the documentation to make this function work.
-            
-            The function should delete the correct post in the database using the docId
-         */
-
-            await deleteDoc(doc(db, collectionName, docId));
+          await deleteDoc(doc(db, collectionName, docId));
     }
 
     /* == Functions - UI Functions == */
